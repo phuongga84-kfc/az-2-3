@@ -4,51 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Học làm gì chơi đe</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-            margin: 0;
-        }
-        .menu {
-            display: flex;
-            flex-direction: column;
-            width: 90%;
-            max-width: 400px;
-        }
-        .menu a {
-            text-decoration: none;
-            background-color: #007bff;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 8px;
-            font-size: 18px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        .menu a:hover {
-            background-color: #0056b3;
-        }
-        .menu a.disabled {
-            background-color: #ccc;
-            color: #666;
-            pointer-events: none;
-        }
-        h1{
-            color:#007bff
-        }
-        p{
-            color: #666;
-        }
-        
-    </style>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <h1>Azota Giữa kỳ II</h1>
@@ -60,6 +18,22 @@
         <a href="vatly.html">Vật lý</a>
         <a href="hoahoc.html">Hóa học</a>
     </div>
-    <p>Cập nhật lần cuối 21:30 12/03/2025 xem tại <b><a href="log.html">Thông báo</a></b></p>
+    <p>Cập nhật lần cuối 21:30 12/03/2025 xem tại <b><a href="log.html">nội dung cập nhật</a></b></p>
+
+    <div class="noti" onclick="openNoti()">
+        <i class='bx bxs-bell'></i>
+        <div class="red"></div>
+    </div>
+    
+
+    <div id="shadow">
+        <div class="content">
+            <span class="tieude">Thông báo</span>
+            <span class="nd">Hoạt động trở lại rồi làm đi ae.</span>
+            <span class="ft" style="margin-top: 10px;">21:30 12/03/2025</span>
+            <input type="button" class="btn" value="Đóng" onclick="closeNoti()">
+            <span class="ft">Xem thêm tại <a href="log.html">nội dung cập nhật</a></span>
+        </div>
+    </div>
 </body>
 </html>
